@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -67,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R             &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D         &kp F             &kp G        &kp ESCAPE          &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 5 SQT
-&mt LCTRL Z     &kp X         &kp C         &kp V             &kp B        &kp TAB             &kp COLON      &kp N        &kp M  &kp COMMA  &kp DOT  &mt SLASH QUESTION
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_2  &lt 3 SPACE  &lt 2 LANGUAGE_1    &kp BACKSPACE  &lt 1 ENTER                             &screen_shot
+&kp Q        &kp W         &kp E         &kp R             &kp T                                           &kp Y                &kp U  &kp I      &kp O    &kp P
+&kp A        &kp S         &kp D         &kp F             &kp G        &kp ESCAPE          &kp MINUS      &kp H                &kp J  &kp K      &kp L    &kp LEFT_SHIFT
+&mt LCTRL Z  &kp X         &kp C         &kp V             &kp B        &kp TAB             &kp COLON      &kp N                &kp M  &kp COMMA  &kp DOT  &mt QUESTION SLASH
+&kp LA(A)    &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_2  &lt 3 SPACE  &lt 2 LANGUAGE_1    &kp BACKSPACE  &mt RIGHT_GUI ENTER                             &screen_shot
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -116,10 +117,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans               &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                          &trans
+&trans  &trans  &trans  &trans  &trans                                &trans               &kp LC(U)           &kp LC(D)            &kp LC(W)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp LC(LA(A))        &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(E)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans               &trans              &trans               &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                                                      &trans
             >;
         };
 
