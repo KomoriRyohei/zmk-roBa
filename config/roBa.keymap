@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -73,7 +74,7 @@
 &kp LA(A)    &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_2  &lt 3 SPACE  &lt 2 LANGUAGE_1    &kp BACKSPACE    &mt RIGHT_GUI ENTER                                  &screen_shot
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
@@ -92,6 +93,8 @@
 &trans        &trans        &kp TILDE     &kp AMPERSAND  &trans        &kp PIPE    &kp BACKSLASH   &kp PLUS         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE      &mt RIGHT_BRACKET LEFT_BRACKET  &mt GREATER_THAN LESS_THAN
 &trans        &trans        &trans        &trans         &trans        &trans      &kp LA(Z)       &kp LA(SPACE)                                                                                                            &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         ARROW {
