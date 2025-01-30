@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -87,10 +88,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                              &kp NUMBER_6     &kp NUMBER_7                            &kp NUMBER_8                    &kp NUMBER_9                    &kp NUMBER_0
-&kp AT        &kp DOLLAR    &kp PERCENT   &kp HASH       &trans        &trans      &kp UNDERSCORE  &kp EXCLAMATION  &kp ASTERISK                            &mt DOUBLE_QUOTES SINGLE_QUOTE  &kp EQUAL                       &kp GRAVE
-&trans        &trans        &kp TILDE     &kp AMPERSAND  &trans        &kp PIPE    &kp BACKSLASH   &kp PLUS         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_BRACE LEFT_BRACE      &mt RIGHT_BRACKET LEFT_BRACKET  &mt GREATER_THAN LESS_THAN
-&trans        &trans        &trans        &trans         &trans        &trans      &kp LA(Z)       &kp LA(SPACE)                                                                                                            &trans
+&kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5                               &kp NUMBER_6     &kp NUMBER_7           &kp NUMBER_8       &kp NUMBER_9       &kp NUMBER_0
+&kp AT         &kp DOLLAR        &kp PERCENT     &kp HASH              &kp TILDE      &trans      &kp UNDERSCORE  &kp EXCLAMATION  &kp ASTERISK           &kp DOUBLE_QUOTES  &kp EQUAL          &kp GRAVE
+&kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp PIPE    &kp BACKSLASH   &kp PLUS         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp GREATER_THAN
+&trans         &trans            &trans          &trans                &trans         &trans      &kp LA(Z)       &kp LA(SPACE)                                                                 &kp SINGLE_QUOTE
             >;
 
             sensor-bindings = <&inc_dec_kp LS(PAGE_UP) LS(PAGE_DOWN)>;
