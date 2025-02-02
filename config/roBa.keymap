@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -70,7 +71,7 @@
 &mt ESCAPE Q  &kp W         &kp E         &kp R             &kp T                                             &kp Y                &kp U  &kp I      &lt 5 O       &kp P
 &mt LCTRL A   &kp S         &kp D         &kp F             &kp G        &lt 6 ESCAPE        &mt UNDER MINUS  &kp H                &kp J  &kp K      &lt 3 L       &kp LEFT_SHIFT
 &kp Z         &kp X         &kp C         &kp V             &kp B        &mt EXCL TAB        &mt SEMI COLON   &kp N                &kp M  &kp COMMA  &mt EXCL DOT  &mt QUESTION SLASH
-&kp LA(A)     &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_2  &lt 3 SPACE  &lt 2 LANGUAGE_1    &kp BACKSPACE    &mt RIGHT_GUI ENTER                                  &screen_shot
+&kp LA(A)     &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2    &kp BACKSPACE    &mt RIGHT_GUI ENTER                                  &screen_shot
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -87,10 +88,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5                               &kp NUMBER_6     &kp NUMBER_7           &kp NUMBER_8       &kp NUMBER_9       &kp NUMBER_0
-&kp AT         &kp DOLLAR        &kp PERCENT     &kp HASH              &kp TILDE      &trans      &kp UNDERSCORE  &kp EXCLAMATION  &kp ASTERISK           &kp DOUBLE_QUOTES  &kp EQUAL          &kp GRAVE
-&kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp PIPE    &kp BACKSLASH   &kp PLUS         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp GREATER_THAN
-&trans         &trans            &trans          &trans                &trans         &trans      &kp LA(Z)       &kp LA(SPACE)                                                                 &kp SINGLE_QUOTE
+&kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5                                &kp NUMBER_6     &kp NUMBER_7           &kp NUMBER_8       &kp NUMBER_9       &kp NUMBER_0
+&kp AT         &kp DOLLAR        &kp PERCENT     &kp HASH              &kp TILDE      &kp EQUAL    &kp UNDERSCORE  &kp EXCLAMATION  &kp ASTERISK           &kp DOUBLE_QUOTES  &kp EQUAL          &kp GRAVE
+&kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp AMPERSAND  &kp PIPE     &kp BACKSLASH   &kp PLUS         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp GREATER_THAN
+&kp CARET      &trans            &trans          &trans                &trans         &trans       &kp LA(Z)       &kp LA(SPACE)                                                                 &kp SINGLE_QUOTE
             >;
 
             sensor-bindings = <&inc_dec_kp LS(PAGE_UP) LS(PAGE_DOWN)>;
