@@ -68,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W         &kp E         &kp R             &kp T                                           &kp Y                &kp U  &kp I      &lt 5 O       &kp P
-&mt LCTRL A  &kp S         &kp D         &kp F             &kp G        &lt 6 ESCAPE        &kp MINUS      &kp H                &kp J  &kp K      &kp L         &kp LEFT_SHIFT
-&kp Z        &kp X         &kp C         &kp V             &kp B        &kp TAB             &kp LG(LS(R))  &kp N                &kp M  &kp COMMA  &mt EXCL DOT  &mt QUESTION SLASH
-&kp LA(A)    &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2    &kp BACKSPACE  &mt RIGHT_GUI ENTER                                  &screen_shot
+&kp Q        &kp W         &kp E         &kp R             &kp T                                              &kp Y                &kp U  &kp I      &lt 5 O       &kp P
+&mt LCTRL A  &kp S         &kp D         &kp F             &kp G        &lt 6 ESCAPE          &kp MINUS       &kp H                &kp J  &kp K      &kp L         &kp LEFT_SHIFT
+&kp Z        &kp X         &kp C         &kp V             &kp B        &kp TAB               &kp UNDERSCORE  &kp N                &kp M  &kp COMMA  &mt EXCL DOT  &mt QUESTION SLASH
+&kp LA(A)    &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2      &kp BACKSPACE   &mt RIGHT_GUI ENTER                                  &mt LS(LG(KP_NUMBER_4)) LS(LG(R))
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -79,19 +79,19 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &kp F1               &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp F6               &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans               &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                          &kp F12
+&trans  &trans  &trans  &trans  &trans                                  &kp F1               &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans              &kp F6               &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans              &trans               &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                          &kp F12
             >;
         };
 
         NUM {
             bindings = <
-&kp NUMBER_1       &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                  &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0
-&kp TILDE          &kp AT_SIGN       &kp HASH      &kp DOLLAR    &kp PERCENT   &kp AMPERSAND    &kp ASTERISK   &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE     &kp COLON     &kp SEMI      &kp PIPE         &kp BACKSLASH  &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN
-&kp CARET          &kp LEFT_ALT      &kp LEFT_WIN  &trans        &trans        &trans           &kp LA(Z)      &kp LA(SPACE)                                                               &kp UNDER
+&kp NUMBER_1       &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                    &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0
+&kp TILDE          &kp AT_SIGN       &kp HASH      &kp DOLLAR    &kp PERCENT   &kp AMPERSAND      &kp ASTERISK   &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE     &kp COLON     &kp SEMI      &kp PIPE           &kp BACKSLASH  &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN
+&kp CARET          &kp LEFT_ALT      &kp LEFT_WIN  &trans        &trans        &trans             &kp LA(Z)      &kp LA(SPACE)                                                               &kp UNDER
             >;
 
             sensor-bindings = <&inc_dec_kp LS(PAGE_UP) LS(PAGE_DOWN)>;
@@ -99,10 +99,10 @@
 
         ARROW {
             bindings = <
-&trans          &kp LC(LS(J))           &kp LC(LS(K))     &kp LC(LS(L))            &trans                               &trans             &trans          &trans          &trans           &trans
-&trans          &kp LC(LEFT_ARROW)      &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)      &trans  &trans    &trans             &trans             &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans            &kp LG(LS(RIGHT_ARROW))  &trans  &trans    &trans             &trans             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans          &trans                  &trans            &trans                   &trans  &trans    &kp LS(LG(MINUS))  &kp LS(LG(EQUAL))                                                   &trans
+&trans          &kp LC(LS(J))           &kp LC(LS(K))     &kp LC(LS(L))            &trans                                 &trans             &trans          &trans          &trans           &trans
+&trans          &kp LC(LEFT_ARROW)      &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)      &trans  &trans      &trans             &trans             &mkp LCLK       &kp UP_ARROW    &mkp RCLK        &mkp MCLK
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans            &kp LG(LS(RIGHT_ARROW))  &trans  &trans      &trans             &trans             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans          &trans                  &trans            &trans                   &trans  &trans      &kp LS(LG(MINUS))  &kp LS(LG(EQUAL))                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -110,19 +110,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans    &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &trans               &kp LC(U)           &kp LC(D)            &kp LC(W)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp LC(LA(A))        &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(E)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans               &trans              &trans               &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                                                      &trans
+&trans  &trans  &trans  &trans  &trans                                  &trans               &kp LC(U)           &kp LC(D)            &kp LC(W)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans              &kp LC(LA(A))        &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(E)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans              &trans               &trans              &trans               &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                                                      &trans
             >;
         };
 
