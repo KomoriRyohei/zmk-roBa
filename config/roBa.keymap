@@ -74,7 +74,7 @@
 &kp ESCAPE  &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2      &kp BACKSPACE   &mt RIGHT_GUI ENTER                                  &mt RS(RG(NUMBER_4)) LA(A)
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
         };
 
         FUNCTION {
@@ -105,7 +105,7 @@
 &trans          &trans                  &trans            &trans                   &trans  &trans      &kp LS(LG(MINUS))  &kp LS(LG(EQUAL))                                                   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(LS(Z)) LC(Z)>;
         };
 
         MOUSE {
