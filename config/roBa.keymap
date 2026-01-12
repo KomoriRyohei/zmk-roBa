@@ -50,6 +50,34 @@
             bindings = <&kp LS(LG(NUMBER_4))>;
             label = "TO_LAYER_0";
         };
+
+        auto_kakko: auto_kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "AUTO_KAKKO";
+        };
+
+        auto_brase: auto_brase {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+            label = "AUTO_BRASE";
+        };
+
+        auto_sankaku: auto_sankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
+            label = "AUTO_SANKAKU";
+        };
+
+        auto_shikaku: auto_shikaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "AUTO_SHIKAKU";
+        };
     };
 
     behaviors {
@@ -88,10 +116,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5                               &kp NUMBER_6   &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9    &kp NUMBER_0
-&kp AMPERSAND  &kp AT_SIGN       &kp HASH           &kp DOLLAR    &kp PERCENT   &trans        &kp ASTERISK   &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp GRAVE      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL     &kp PLUS      &kp PIPE      &kp BACKSLASH  &kp SEMI       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN
-&kp CARET      &kp LEFT_ALT      &kp LEFT_WIN       &trans        &trans        &trans        &kp LA(Z)      &kp LA(SPACE)                                                               &kp TILDE
+&kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5                               &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8           &kp NUMBER_9   &kp NUMBER_0
+&kp AMPERSAND  &kp AT_SIGN       &kp HASH           &kp DOLLAR    &kp PERCENT   &trans        &kp ASTERISK   &kp COLON      &auto_kakko    &kp RIGHT_PARENTHESIS  &auto_brase    &kp RIGHT_BRACE
+&kp GRAVE      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL     &kp PLUS      &kp PIPE      &kp BACKSLASH  &kp SEMI       &auto_shikaku  &kp RIGHT_BRACKET      &auto_sankaku  &kp GREATER_THAN
+&kp CARET      &kp LEFT_ALT      &kp LEFT_WIN       &trans        &trans        &trans        &kp LA(Z)      &kp LA(SPACE)                                                       &kp TILDE
             >;
 
             sensor-bindings = <&inc_dec_kp LS(PAGE_UP) LS(PAGE_DOWN)>;
