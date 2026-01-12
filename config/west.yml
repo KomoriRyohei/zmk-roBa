@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
-      revision: main
+      revision: c05f535  # 2024-06-17: Before ball-action feature
   self:
     path: config
