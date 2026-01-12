@@ -71,7 +71,7 @@
 &kp Q       &kp W         &kp E         &kp R             &lt 6 T                                            &kp Y                &kp U  &kp I      &lt 5 O       &mt RCTRL P
 &kp A       &kp S         &kp D         &kp F             &kp G        &trans                &kp MINUS       &kp H                &kp J  &kp K      &kp L         &kp LEFT_SHIFT
 &kp Z       &kp X         &kp C         &kp V             &kp B        &kp TAB               &kp UNDERSCORE  &kp N                &kp M  &kp COMMA  &mt EXCL DOT  &mt QUESTION SLASH
-&kp ESCAPE  &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2      &kp BACKSPACE   &mt RIGHT_GUI ENTER                                  &mt RS(RC(NUMBER_4)) LA(A)
+&kp ESCAPE  &kp LEFT_ALT  &kp LEFT_GUI  &lt 5 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2      &kp BACKSPACE   &mt RIGHT_GUI ENTER                                  &mt RS(RG(NUMBER_4)) LA(A)
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
