@@ -78,6 +78,27 @@
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW>;
             label = "AUTO_SHIKAKU";
         };
+
+        auto_quote: auto_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp LEFT_ARROW>;
+            label = "AUTO_QUOTE";
+        };
+
+        auto_squote: auto_squote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SINGLE_QUOTE &kp LEFT>;
+            label = "AUTO_SQUOTE";
+        };
+
+        auto_back: auto_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp LEFT>;
+            label = "AUTO_BACK";
+        };
     };
 
     behaviors {
@@ -116,10 +137,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5                               &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8           &kp NUMBER_9   &kp NUMBER_0
-&kp AMPERSAND  &kp AT_SIGN       &kp HASH           &kp DOLLAR    &kp PERCENT   &trans        &kp ASTERISK   &kp COLON      &auto_kakko    &kp RIGHT_PARENTHESIS  &auto_brase    &kp RIGHT_BRACE
-&kp GRAVE      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EQUAL     &kp PLUS      &kp PIPE      &kp BACKSLASH  &kp SEMI       &auto_shikaku  &kp RIGHT_BRACKET      &auto_sankaku  &kp GREATER_THAN
-&kp CARET      &kp LEFT_ALT      &kp LEFT_WIN       &trans        &trans        &trans        &kp LA(Z)      &kp LA(SPACE)                                                       &kp TILDE
+&kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                               &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8           &kp NUMBER_9   &kp NUMBER_0
+&kp AMPERSAND  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &trans        &kp ASTERISK   &kp COLON      &auto_kakko    &kp RIGHT_PARENTHESIS  &auto_brase    &kp RIGHT_BRACE
+&auto_back     &auto_squote  &auto_quote   &kp EQUAL     &kp PLUS      &kp PIPE      &kp BACKSLASH  &kp SEMI       &auto_shikaku  &kp RIGHT_BRACKET      &auto_sankaku  &kp GREATER_THAN
+&kp CARET      &kp LEFT_ALT  &kp LEFT_WIN  &trans        &trans        &trans        &kp LA(Z)      &kp LA(SPACE)                                                       &kp TILDE
             >;
 
             sensor-bindings = <&inc_dec_kp LS(PAGE_UP) LS(PAGE_DOWN)>;
